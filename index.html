@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cat Feeding Simulation</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1 class="header_title">Симулятор кормления кошек</h1>
+		<div class="control-panel">
+			<form class="control-panel_form" id="simulationForm">
+        <label for="n">Количество кошек (n):</label>
+        <input type="number" id="n" required />
+
+        <label for="b">Количество еды, необходимое кошке (b):</label>
+        <input type="number" id="b" required />
+
+        <label for="m">Объем чаши (м):</label>
+        <input type="number" id="m" required />
+
+        <label for="t">Время кошке поесть (t):</label>
+        <input type="number" id="t" required />
+
+        <label for="r">Время пополнить чашу (r):</label>
+        <input type="number" id="r" required />
+
+				<button type="button" class='button-start' onclick="startSimulation()">Start</button>
+			</form>
+
+			<div class="control-panel_logs"></div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

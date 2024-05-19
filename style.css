@@ -1,0 +1,64 @@
+:root {
+  --mainColor: #444;
+  --secondaryColor: #0ae75f;
+  --secondaryColorHover: #38f681
+  --textColor: #fff;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	background-color: #000;
+}
+
+.control-panel {
+	display: flex;
+	gap: 20px;
+}
+
+.control-panel_form {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+input {
+	max-width: 300px;
+	height: 40px;
+	font-size: 20px;
+	color: var(--textColor);
+	background-color: var(--mainColor);
+	border-radius: 12px;
+
+	outline: none;
+	border: none;
+}
+
+.control-panel_logs {
+	width: 100%;
+	padding: 10px;
+	color: var(--textColor);
+	background-color: var(--mainColor);
+	border-radius: 12px;
+}
+
+.button-start {
+	cursor: pointer;
+	height: 40px;
+	background-color: var(--secondaryColor);
+	border-radius: 12px;
+	margin-top: 10px;
+	border: none;
+	font-size: 20px;
+	color: var(--textColor);
+}
+
+.button-start:hover {
+	background-color: var(--secondaryColorHover);
+}
