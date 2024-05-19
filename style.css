@@ -1,7 +1,7 @@
 :root {
   --mainColor: #444;
   --secondaryColor: #0ae75f;
-  --secondaryColorHover: #38f681
+  --secondaryColorHover: #38f681;
   --textColor: #fff;
 }
 
@@ -15,6 +15,7 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 20px;
 	background-color: #000;
+  color: var(--textColor);
 }
 
 .control-panel {
